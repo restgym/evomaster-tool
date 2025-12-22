@@ -1,5 +1,5 @@
 FROM webfuzzing/evomaster:v4.0.0
 
-COPY entrypoint.sh /entrypoint.sh
+COPY ./tools/evomaster/entrypoint.sh /app/entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
