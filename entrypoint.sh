@@ -4,7 +4,7 @@ set -e
 ls /specifications
 
 while true; do
-    java -jar /evomaster.jar \
+  java -jar /evomaster.jar \
     --runningInDocker true \
     --blackBox true \
     --maxTime 1h \
