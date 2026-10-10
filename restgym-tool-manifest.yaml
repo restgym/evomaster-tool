@@ -1,0 +1,29 @@
+# RESTgym tool manifest
+manifest_version: 1
+
+id: evomaster
+name: EvoMaster
+version: "4.0.0"                  # Docker image webfuzzing/evomaster:v4.0.0
+description: AI-driven tool for automatically generating system-level test cases (fuzzing) for web APIs. Run in black-box mode in RESTgym.
+license: LGPL-3.0
+repository: https://github.com/WebFuzzing/EvoMaster
+authors:
+  - name: Andrea Arcuri
+    # affiliation: Kristiania University College   # unverified
+    orcid: 0000-0003-0799-2930
+  - name: Juan Pablo Galeotti
+    # affiliation: University of Buenos Aires      # unverified
+    orcid: 0000-0002-0747-8205
+  - name: Bogdan Marculescu
+    # affiliation: Kristiania University College   # unverified
+    orcid: 0000-0002-1393-4123
+  - name: Man Zhang
+    # affiliation: Kristiania University College   # unverified
+    orcid: 0000-0003-1204-9322
+citation:
+  doi: 10.21105/joss.02153           # JOSS 2021
+
+compatibility:
+  openapi_versions: ["2.0", "3.0", "3.1"]   # README of the main branch
+  spec_formats: [json]            # entrypoint.sh reads /specifications/${API}-openapi.json
+  budgets: [time]
